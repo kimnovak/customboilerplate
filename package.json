@@ -37,10 +37,8 @@
         "react-dom": "^17.0.2"
     },
     "lint-staged": {
-        "src/*": [
-            "eslint src --ext .jsx,.js --fix"
-        ],
         "**/*": [
+            "eslint src --ext .jsx,.js --fix",
             "prettier --write --ignore-unknown"
         ]
     }

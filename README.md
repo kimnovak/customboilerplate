@@ -1,5 +1,5 @@
 # customboilerplate
-Custom React boilerplate with Path aliases, Prettier, Husky w/ pre-commit hook setup
+Custom React boilerplate with Path aliases, Prettier, Eslint, Husky w/ pre-commit hook setup
 
 ## Prerequisites
 ```node >= 14```  

@@ -25,6 +25,10 @@ module.exports = {
                     },
                 ],
             },
+            {
+                test: /\.s?css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
         ],
     },
     resolve: {
@@ -60,12 +64,12 @@ module.exports = {
         },
         hot: true,
         open: true,
-        onListening: function (devServer) {
+        onListening(devServer) {
             if (!devServer) {
                 throw new Error('webpack-dev-server is not defined');
             }
 
-            const port = devServer.server.address().port;
+            const { port } = devServer.server.address();
             console.log('Listening on port:', port);
         },
     },
